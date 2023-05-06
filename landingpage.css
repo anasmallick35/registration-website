@@ -1,4 +1,6 @@
-html { 
+html ,body{ 
+  width: 100%;
+  height: 100%;
     background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,32 +8,36 @@ html {
     background-size: cover;
   }
   h1{
+    font-size: 3rem;
     color : white;
-    margin-top : 550px;
-    margin-left : 550px;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-  }
-.btn-design{
-    color : white;
-    background-color: orange;
-    font-family: cursive;
-  margin-left : 750px;
-  margin-top: 23px;
-  border-radius: 150px;
-  text-decoration: none;
-  padding : 0.5em 1em;
-}
-.btn-design:hover{
-    background-color: blue;
-    border-width: 2em;
 }
 hr{
-    border-color: orange;
-    max-width: 40px;
-    margin-left: 800px;
-    margin-bottom :30px;
+  margin: 20px auto;
+  color: #F05F44;
+  border: 2px solid #F05F44;
+  max-width: 65px;
+  opacity: 1;  
 }
-
-/*here we use margin for locating the items at desited posirion but it not responsive
-thats why we use div so that we make many container class and other class and by taking concept of row &column we allocate the items at desired position
+.buffer{
+  height : 27rem;
+}
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+}
+.btn-primary {
+  background-color: #F05F44;
+  border-color: #F05F44;
+  --bs-btn-hover-bg: #ee4b08;
+  --bs-btn-hover-border-color: #ee4b08; 
+}
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px;
+  cursor: pointer;
+}
+.btn-xl {
+  padding: 1rem 2rem; 
+}
